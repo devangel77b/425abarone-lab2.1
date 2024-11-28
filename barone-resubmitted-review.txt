@@ -1,0 +1,10 @@
+This is a review of the resubmitted manuscript by Barone et al entitled "Investigation of the relationship between net force and accelreation in a pulley system". The title and abstract are misnomers as the team tested newton's first law (static) F=0. I recommend minor revision to clarify this.
+
+In methods, the team should explain how the spring scale was calibrated.
+
+The formatting, etc are all fine; but the significance of testing Newton's first law for a straight pulley system is rather trivial.
+
+Contributions and peer review can be condensed into a single acknowledgements section.
+
+In references, full bibliographic information is needed for the sources given.
+

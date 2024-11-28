@@ -1,0 +1,18 @@
+This is a review of the manuscript by Barone et al, "INvestigation of the relationship between net force and acceleration in a pulley system." The MS investigates the relationship between net force and acceleration in a two mass pulley system claiming to cover the case when one mass is infinite.
+
+I recommend REJECT.
+
+The authors do not explain how to obtain an infinite mass. Furthermore,
+they appear mainly to test the static case of Newton's first law, F=0. No data
+are provided. The method of having an infinite mass is not explained and is not
+replicable.
+
+Perhaps the authors had issues collecting data; with several different masses
+and tensions they show a=0, suggesting in this case there is some other
+reaction force balacing the tension. If they had written up this other
+potentially interesting case readers might like to know more; or perhaps the
+authors can re-tool their measurements to address their original research
+question regarding whether F=ma or not.
+
+Formatting, tigures and tables: The tables and figures are exemplary; and the formatting, even though the data are lacking. The only suggestion is to remove the bulleted list of measurements in favor of writing sentences.
+
