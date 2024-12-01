@@ -1,0 +1,142 @@
+\documentclass[aps, prl, twocolumn, 10pt]{revtex4-2}
+\usepackage{amsmath, amssymb, graphicx, float, hyperref, booktabs, pgfplots}
+\pgfplotsset{compat=1.17}
+
+\setlength{\parskip}{5pt}
+
+\begin{document}
+
+    % Header
+    \title{Investigating Newton's First Law in a Pulley System}
+    \author{Andrew Barone, Alexander Gut, Rishith Kilaru, Shrikar Swami}
+    \date{\today}
+    \maketitle
+    
+    
+    \section*{ABSTRACT}
+    
+        This experiment examined how force, mass, and acceleration relate in a one-mass pulley system. We measured the force acted upon a spring (Equivalent to the Tension in the spring) and compared it to the weight of the mass used in the experiment, factoring in Earth's gravity rounded to \(-9.81 m/s^2.\) By securing one end of the spring scale and the other end to the string attached to the mass, we tested whether the measured force matched what we expected based on the mass and gravity. Our results showed that the tension in the system changed depending on the total mass hanging. This supports the inverse relationship between mass and acceleration described by Static Net Force = 0, which highlights how forces balance to prevent movement under certain conditions. 
+    
+    \section*{Introduction}
+        \hrulefill
+        
+        This experiment explores Newton's First Law, when the sum of all forces in a system is zero. We are using scenarios where we change masses. By securing one end of the spring scale to an object, and the other end to a string with the mass attached at a point beyond the pulley. The spring scale is calibrated by adding a known mass on the scale and zeroing it to be accurate. We can describe the relationship of force and mass with our results as they will, with this setup, illustrate how with an increase in mass there is a positive increase in force. If Newton's first law is correct, the spring scale will exert an equal and opposite force, contributing to no net movement.
+    
+        To analyze the system, we use the equation:
+        \begin{equation}
+            T_1 = m_1 a_1
+        \end{equation}
+        
+        where \( T_1 \) is the tension in the string (the force), \( m_1 \) is the mass of the various hanging masses, and \( a_1 \) is the Earth's gravitational acceleration. We will compare the theoretical results using a variety of masses, \( a_1 \) and this equation to create a theoretical force to compare with our experimental data; the force measured from the spring scale.
+    
+    \section*{Methods and Materials}
+        \hrulefill
+        
+        Our tests were conducted using a spring, a hanging mass, and a pulley to change the direction of a string for added control of the objects . The materials used for this experimental setup were a complete scientific mass kit with a range of weights including 10 g, 20 g, 50 g, 100 g, 250 g, 500 g, and 1000 g masses, a spring scale with a measurement range of 0 Newtons to 20 Newtons, an object that will not move to attach the force meter to, a pulley, an elevated surface about 0.8 meters off the ground, and a string.
+        
+        First, calibrate the spring scale to provide a reliable number, then attach the pulley so that it is perpendicular to the surface. After that, attach one end of the force meter to the non-moving object and the other end to the string. Then, tie the string to the mass you will hang off the table. After, put the string over the pulley and record the force measured by the force meter for each mass attached to the string. Finally, repeat these steps for the different masses used in the experimental trials.
+        
+        To compare experimental and real-world values, we calculated the experimental force using the previously mentioned formula. Plugging in our values, we obtained the tension in the string, representing the force on the spring scale, and then compared it to the recorded true value to check for consistency. 
+        
+        \vspace{-1.5em}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.9\linewidth]{setup.png}
+            \caption{Setup for the pulley system.}
+            \label{fig:setup}
+        \end{figure}
+    
+    \section*{Results}
+        \hrulefill
+        
+        % Table of masses and the weight
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{ccc}
+                \toprule
+                \textbf{Mass on string (g)} & \textbf{Weight of mass on string (N)} \\
+                \midrule
+            %  mass(g)    weight(N)
+                100   &   0.8  \\
+                350   &   3.2  \\
+                500   &   4.4  \\
+                750   &   7.2  \\
+                1000  &   9.9  \\
+                1500  &   15.2 \\
+                1570  &   15.9 \\
+                2000  &   20.0 \\
+                \bottomrule
+            \end{tabular}
+            \caption{Measured relationship between mass on the string and weight (tension).}
+        \end{table}
+        
+        % graph
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                \begin{axis}[
+                    title={Mass on String vs. Weight (Tension)},
+                    xlabel={Mass on string (g)},
+                    ylabel={Weight (Tension) (N)},
+                    xmin=0, xmax=2100, 
+                    ymin=0, ymax=25,
+                    xtick={0,500,1000,1500,2000},
+                    ytick={0,5,10,15,20,25},
+                    grid=both,
+                    legend pos=north west,
+                    every axis label/.style={font=\normalsize},
+                    every tick label/.style={font=\footnotesize},
+                    width=8cm,
+                    height=6cm,
+                ]
+                \addplot[only marks, mark=*, mark options={scale=1.25}, color=blue] coordinates {
+                    (100, 0.8)
+                    (350, 3.2)
+                    (500, 4.4)
+                    (750, 7.2)
+                    (1000, 9.9)
+                    (1500, 15.2)
+                    (1570, 15.9)
+                    (2000, 20.0)
+                };
+                \addlegendentry{Measured Data}
+                \end{axis}
+            \end{tikzpicture}
+            \caption{Graph showing the roughly linear relationship between the mass on the string and the measured weight (tension).}
+            \label{fig:mass_tension_graph}
+        \end{figure}
+        
+        Our experiment demonstrated a direct relationship between the mass and tension. As the mass increased from 100 g to 2000 g, the tension rose proportionally from 0.8 N to 20.0 N, confirming the predictions based on Newton's first law since the tension increases. The data is closely aligned with theoretical values of the weight force, showing consistent accuracy in the result. Minor deviations observed were due to to friction in the pulley and calibration imperfections in the spring scale, but had minimal impact on the overall trend. Overall, the findings support that, under constant gravitational acceleration, tension increases with mass. 
+    
+    \section*{Discussion}
+        \hrulefill
+        
+        Our results indicate that as the mass on the string increases the measured tension also increases in turn, confirming Newton's First law
+        
+        Despite our attempts to simplify conditions, some factors may have affected our results, such as friction between the pulley and string and slight differences in the expected and actual weights. Misalignment or reading errors with the spring scale may have also introduced inaccuracies.
+        
+        To reduce these issues in future experiments, recalibrating weights and lubricating surfaces would reduce the experimental error.
+        
+        Overall, the experiment highlights how mass and force relate, showing that as mass increases, acceleration decreases under constant force. Real-world conditions, including reaction forces and limitations, should be considered to ensure accurate results.
+    
+    \section*{Acknowledgments}
+        \hrulefill
+        
+        We thank Alexander Gut and Andrew Barone for their work in data collection and for ensuring the reliability of the results. We also acknowledge Rishith Kilaru and Shrikar Swami for contributing to the experimental design and setup. Special thanks go to Dr. Evangelista for his unwavering support and enthusiasm throughout this project.
+        
+        \section{Contributions}
+        \hrulefill
+        
+        We credit Andrew Barone for leading data collection and experimental trials; Alexander Gut for help with the data collection, trials, and experiment design; Rishith Kilaru for setup, report formatting, and figures; and Shrikar Swami for help with the experiment design and setup. We acknowledge the valuable feedback from our peer reviewers, whose insights helped refine and strengthen our paper.
+    
+    \vspace{6.5em}
+    \section*{References}
+        
+        \begin{enumerate}
+            \item P. A. Tipler and G. Mosca, \textit{Physics for Scientists and Engineers}, 5th ed. (W H Freeman and Company, New York, 2004).
+            \item Pelcovits, Robert A., and Joshua Farkas. \textit{AP Physics C Premium, Eighth Edition: 4 Practice Tests + Comprehensive Review + Online Practice (2025).} Kaplan Publishing, 2024. 
+            \item Evangelista, Dennis. \textit {Unpublished class notes.}
+        
+        \end{enumerate}
+
+\end{document}
