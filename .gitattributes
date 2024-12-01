@@ -1,1 +1,4 @@
 *.pdf filter=lfs diff=lfs merge=lfs -text
+Barone-et-al.pdf filter=lfs diff=lfs merge=lfs -text
+barone-markup.pdf filter=lfs diff=lfs merge=lfs -text
+setup.png filter=lfs diff=lfs merge=lfs -text
